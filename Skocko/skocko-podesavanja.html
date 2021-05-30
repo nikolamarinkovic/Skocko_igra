@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skocko uputstva</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="background" onload="initSettings()">
+    <h1 class="center" id="naslovTeskt"></h1>
+    <hr>
+    <p class="settingsUputstvo">
+        Kliknite na bilo koji znak u donjem redu da biste ga dodali u kombinaciju, ako zelite da uklonite znak iz kombinacije, kliknite na znak koji zelite da sklonite, u gornjem redu
+    </p>
+    <div>
+    <br>
+    <div id="combination">
+        <img src="skocko-dodatno/prazno.png" alt="" onclick="brisiIzKombinacije(0)" id="polje0">
+        <img src="skocko-dodatno/prazno.png" alt="" onclick="brisiIzKombinacije(1)" id="polje1">
+        <img src="skocko-dodatno/prazno.png" alt="" onclick="brisiIzKombinacije(2)" id="polje2">
+        <img src="skocko-dodatno/prazno.png" alt="" onclick="brisiIzKombinacije(3)" id="polje3">
+    </div>
+    <br>
+    <div class="pictures">
+        <img src="skocko-dodatno/skocko.png" alt="" onclick="addElem('skocko')">
+        <img src="skocko-dodatno/tref.png" alt="" onclick="addElem('tref')">
+        <img src="skocko-dodatno/pik.png" alt="" onclick="addElem('pik')">
+        <img src="skocko-dodatno/srce.png" alt="" onclick="addElem('srce')">
+        <img src="skocko-dodatno/karo.png" alt="" onclick="addElem('karo')">
+        <img src="skocko-dodatno/zvezda.png" alt="" onclick="addElem('zvezda')">
+
+    </div>
+    <button class="b2" onclick="combinationInsert()">Zavrsi</button>
+
+        
+    </div>
+    
+
+</body>
+</html>
